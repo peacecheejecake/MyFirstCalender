@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA1A878C21321BCD00C7BF0E /* SettingViewControllerKorean.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A878B21321BCD00C7BF0E /* SettingViewControllerKorean.swift */; };
+		CA1A878E21321C3500C7BF0E /* SettingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A878D21321C3500C7BF0E /* SettingViewControllerProtocol.swift */; };
+		CA1A87902132E4FD00C7BF0E /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A878F2132E4FD00C7BF0E /* MonthViewController.swift */; };
+		CA1A87922132E50100C7BF0E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A87912132E50100C7BF0E /* MonthView.swift */; };
+		CA1A87942132F90F00C7BF0E /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A87932132F90F00C7BF0E /* ThemeManager.swift */; };
+		CA55D437212ED9F000F691E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55D436212ED9F000F691E3 /* AppDelegate.swift */; };
+		CA55D43C212ED9F000F691E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA55D43A212ED9F000F691E3 /* Main.storyboard */; };
+		CA55D43E212ED9F100F691E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA55D43D212ED9F100F691E3 /* Assets.xcassets */; };
+		CA55D441212ED9F100F691E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA55D43F212ED9F100F691E3 /* LaunchScreen.storyboard */; };
+		CA55D449212EDAAA00F691E3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55D448212EDAAA00F691E3 /* SettingViewController.swift */; };
+		CA55D44B212EDAB400F691E3 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55D44A212EDAB400F691E3 /* SettingManager.swift */; };
+		CA55D44D212F056600F691E3 /* LanguageSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55D44C212F056600F691E3 /* LanguageSettingViewController.swift */; };
+		CA55D44F212F05A900F691E3 /* ThemeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55D44E212F05A900F691E3 /* ThemeSettingViewController.swift */; };
+		CA55D451212FEA4F00F691E3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55D450212FEA4F00F691E3 /* FirstViewController.swift */; };
+		CA55D453212FEC3500F691E3 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55D452212FEC3500F691E3 /* MasterViewController.swift */; };
+		CA55D455212FEC4C00F691E3 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55D454212FEC4C00F691E3 /* SideBarViewController.swift */; };
+		CA55D45C2130D0CF00F691E3 /* menuBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CA55D45B2130D0CF00F691E3 /* menuBar.png */; };
+		CA55D45F2130D22600F691E3 /* checkMark.png in Resources */ = {isa = PBXBuildFile; fileRef = CA55D45E2130D22600F691E3 /* checkMark.png */; };
+		CADE65012134E06F0064167E /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE65002134E06F0064167E /* UIColor+extensions.swift */; };
+		CADE6503213525E60064167E /* MonthViewCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE6502213525E60064167E /* MonthViewCollectionLayout.swift */; };
+		CADE6505213540980064167E /* MonthViewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE6504213540980064167E /* MonthViewCollectionCell.swift */; };
+		CADE65072136144F0064167E /* Int+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE65062136144F0064167E /* Int+extensions.swift */; };
+		CADE650921361B870064167E /* MonthViewCollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE650821361B870064167E /* MonthViewCollectionHeader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA1A878B21321BCD00C7BF0E /* SettingViewControllerKorean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewControllerKorean.swift; sourceTree = "<group>"; };
+		CA1A878D21321C3500C7BF0E /* SettingViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewControllerProtocol.swift; sourceTree = "<group>"; };
+		CA1A878F2132E4FD00C7BF0E /* MonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
+		CA1A87912132E50100C7BF0E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		CA1A87932132F90F00C7BF0E /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		CA55D433212ED9F000F691E3 /* MyFirstCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA55D436212ED9F000F691E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA55D43B212ED9F000F691E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA55D43D212ED9F100F691E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA55D440212ED9F100F691E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA55D442212ED9F100F691E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA55D448212EDAAA00F691E3 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		CA55D44A212EDAB400F691E3 /* SettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
+		CA55D44C212F056600F691E3 /* LanguageSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettingViewController.swift; sourceTree = "<group>"; };
+		CA55D44E212F05A900F691E3 /* ThemeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettingViewController.swift; sourceTree = "<group>"; };
+		CA55D450212FEA4F00F691E3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CA55D452212FEC3500F691E3 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		CA55D454212FEC4C00F691E3 /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
+		CA55D45B2130D0CF00F691E3 /* menuBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuBar.png; sourceTree = "<group>"; };
+		CA55D45E2130D22600F691E3 /* checkMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkMark.png; sourceTree = "<group>"; };
+		CADE65002134E06F0064167E /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
+		CADE6502213525E60064167E /* MonthViewCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewCollectionLayout.swift; sourceTree = "<group>"; };
+		CADE6504213540980064167E /* MonthViewCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewCollectionCell.swift; sourceTree = "<group>"; };
+		CADE65062136144F0064167E /* Int+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extensions.swift"; sourceTree = "<group>"; };
+		CADE650821361B870064167E /* MonthViewCollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewCollectionHeader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA55D430212ED9F000F691E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA55D42A212ED9F000F691E3 = {
+			isa = PBXGroup;
+			children = (
+				CA55D435212ED9F000F691E3 /* MyFirstCalender */,
+				CA55D434212ED9F000F691E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA55D434212ED9F000F691E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA55D433212ED9F000F691E3 /* MyFirstCalender.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA55D435212ED9F000F691E3 /* MyFirstCalender */ = {
+			isa = PBXGroup;
+			children = (
+				CA55D45D2130D16300F691E3 /* Resources */,
+				CA55D436212ED9F000F691E3 /* AppDelegate.swift */,
+				CA55D452212FEC3500F691E3 /* MasterViewController.swift */,
+				CA55D450212FEA4F00F691E3 /* FirstViewController.swift */,
+				CA55D454212FEC4C00F691E3 /* SideBarViewController.swift */,
+				CA1A878D21321C3500C7BF0E /* SettingViewControllerProtocol.swift */,
+				CA55D448212EDAAA00F691E3 /* SettingViewController.swift */,
+				CA1A878B21321BCD00C7BF0E /* SettingViewControllerKorean.swift */,
+				CA1A878F2132E4FD00C7BF0E /* MonthViewController.swift */,
+				CA1A87912132E50100C7BF0E /* MonthView.swift */,
+				CADE650821361B870064167E /* MonthViewCollectionHeader.swift */,
+				CADE6504213540980064167E /* MonthViewCollectionCell.swift */,
+				CADE6502213525E60064167E /* MonthViewCollectionLayout.swift */,
+				CA55D44E212F05A900F691E3 /* ThemeSettingViewController.swift */,
+				CA55D44C212F056600F691E3 /* LanguageSettingViewController.swift */,
+				CA55D44A212EDAB400F691E3 /* SettingManager.swift */,
+				CA1A87932132F90F00C7BF0E /* ThemeManager.swift */,
+				CADE65002134E06F0064167E /* UIColor+extensions.swift */,
+				CADE65062136144F0064167E /* Int+extensions.swift */,
+				CA55D43A212ED9F000F691E3 /* Main.storyboard */,
+				CA55D43D212ED9F100F691E3 /* Assets.xcassets */,
+				CA55D43F212ED9F100F691E3 /* LaunchScreen.storyboard */,
+				CA55D442212ED9F100F691E3 /* Info.plist */,
+			);
+			path = MyFirstCalender;
+			sourceTree = "<group>";
+		};
+		CA55D45D2130D16300F691E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA55D45E2130D22600F691E3 /* checkMark.png */,
+				CA55D45B2130D0CF00F691E3 /* menuBar.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA55D432212ED9F000F691E3 /* MyFirstCalender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA55D445212ED9F100F691E3 /* Build configuration list for PBXNativeTarget "MyFirstCalender" */;
+			buildPhases = (
+				CA55D42F212ED9F000F691E3 /* Sources */,
+				CA55D430212ED9F000F691E3 /* Frameworks */,
+				CA55D431212ED9F000F691E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyFirstCalender;
+			productName = MyFirstCalender;
+			productReference = CA55D433212ED9F000F691E3 /* MyFirstCalender.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA55D42B212ED9F000F691E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Jiyoung.Jiwon;
+				TargetAttributes = {
+					CA55D432212ED9F000F691E3 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = CA55D42E212ED9F000F691E3 /* Build configuration list for PBXProject "MyFirstCalender" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA55D42A212ED9F000F691E3;
+			productRefGroup = CA55D434212ED9F000F691E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA55D432212ED9F000F691E3 /* MyFirstCalender */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA55D431212ED9F000F691E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA55D45C2130D0CF00F691E3 /* menuBar.png in Resources */,
+				CA55D441212ED9F100F691E3 /* LaunchScreen.storyboard in Resources */,
+				CA55D45F2130D22600F691E3 /* checkMark.png in Resources */,
+				CA55D43E212ED9F100F691E3 /* Assets.xcassets in Resources */,
+				CA55D43C212ED9F000F691E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA55D42F212ED9F000F691E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA55D455212FEC4C00F691E3 /* SideBarViewController.swift in Sources */,
+				CA1A878C21321BCD00C7BF0E /* SettingViewControllerKorean.swift in Sources */,
+				CA55D44F212F05A900F691E3 /* ThemeSettingViewController.swift in Sources */,
+				CADE65012134E06F0064167E /* UIColor+extensions.swift in Sources */,
+				CA55D44B212EDAB400F691E3 /* SettingManager.swift in Sources */,
+				CADE6505213540980064167E /* MonthViewCollectionCell.swift in Sources */,
+				CA55D437212ED9F000F691E3 /* AppDelegate.swift in Sources */,
+				CA1A878E21321C3500C7BF0E /* SettingViewControllerProtocol.swift in Sources */,
+				CA1A87942132F90F00C7BF0E /* ThemeManager.swift in Sources */,
+				CA55D451212FEA4F00F691E3 /* FirstViewController.swift in Sources */,
+				CA1A87922132E50100C7BF0E /* MonthView.swift in Sources */,
+				CA55D44D212F056600F691E3 /* LanguageSettingViewController.swift in Sources */,
+				CADE650921361B870064167E /* MonthViewCollectionHeader.swift in Sources */,
+				CA1A87902132E4FD00C7BF0E /* MonthViewController.swift in Sources */,
+				CADE65072136144F0064167E /* Int+extensions.swift in Sources */,
+				CA55D449212EDAAA00F691E3 /* SettingViewController.swift in Sources */,
+				CADE6503213525E60064167E /* MonthViewCollectionLayout.swift in Sources */,
+				CA55D453212FEC3500F691E3 /* MasterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA55D43A212ED9F000F691E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA55D43B212ED9F000F691E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA55D43F212ED9F100F691E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA55D440212ED9F100F691E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA55D443212ED9F100F691E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA55D444212ED9F100F691E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA55D446212ED9F100F691E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XVT9A9T7RP;
+				INFOPLIST_FILE = MyFirstCalender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jj.MyFirstCalender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CA55D447212ED9F100F691E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XVT9A9T7RP;
+				INFOPLIST_FILE = MyFirstCalender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jj.MyFirstCalender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA55D42E212ED9F000F691E3 /* Build configuration list for PBXProject "MyFirstCalender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA55D443212ED9F100F691E3 /* Debug */,
+				CA55D444212ED9F100F691E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA55D445212ED9F100F691E3 /* Build configuration list for PBXNativeTarget "MyFirstCalender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA55D446212ED9F100F691E3 /* Debug */,
+				CA55D447212ED9F100F691E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA55D42B212ED9F000F691E3 /* Project object */;
+}
