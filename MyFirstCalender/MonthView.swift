@@ -15,8 +15,11 @@ class MonthView: UIView {
     
     let weekView: UIStackView = UIStackView()
     
+    let firstYearOfCalendar: Int = 2018
+    var currentYear: Int = 2018
     var selectedDate: (Int, Int) = (Calendar.current.component(.month,from: Date()) - 1, Calendar.current.component(.day, from: Date()) - 1)
     var firstDayOfMonth: Int = 1
+    var lastDayOfMonth: Int = 0
     
     
     let GAP: CGFloat = 30
@@ -93,12 +96,7 @@ class MonthView: UIView {
         weekView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: (dateSpacing + dateWidth - weekLabelWidth) / 2).isActive = true
         weekView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -(dateWidth + dateSpacing - weekLabelWidth) / 2).isActive = true
         
-
-
-//        self.backgroundColor = UIColor.lightGray
     }
-
-    
 }
 
 
@@ -110,8 +108,6 @@ extension MonthView: UICollectionViewDataSource, UICollectionViewDelegate, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        
         return daysInMonth[section % 12] + firstDayOfMonth
     }
     
@@ -119,7 +115,7 @@ extension MonthView: UICollectionViewDataSource, UICollectionViewDelegate, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MonthViewCollectionCell
         if indexPath.item >= firstDayOfMonth {
-            cell.dateLabel.text = "\((indexPath.item + 1 - firstDayOfMonth))"
+            cell.dateLabel.text = "\(indexPath.item + 1 - firstDayOfMonth)"
         } else {
             cell.dateLabel.text = ""
         }
@@ -169,7 +165,8 @@ extension MonthView: UICollectionViewDataSource, UICollectionViewDelegate, UICol
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let cell = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header", for: indexPath) as! MonthViewCollectionHeader
         cell.backgroundColor = UIColor.clear
-        cell.monthLabel.text = (indexPath.section + 1).monthString(simple: true)
+        currentYear = firstYearOfCalendar + (indexPath.section - (indexPath.section % 12)) / 12
+        cell.monthLabel.text = (indexPath.section + 1).monthString(simple: true) + " \(currentYear)"
         return cell
     }
     
