@@ -16,11 +16,14 @@ class MonthViewController: UIViewController {
     func setup() {
         let monthView = MonthView()
 //        let backgroundView = UIScrollView()
+        
+        monthView.delegateForVC = self
+        
         view.addSubview(monthView)
         
         view.backgroundColor = UIColor.white
         
-        navigationItem.title = "Month View"
+        navigationItem.title = "\(monthView.currentYear)"
         
         
         navigationItem.leftBarButtonItem?.tintColor = UIColor.main
@@ -38,7 +41,7 @@ class MonthViewController: UIViewController {
 
 extension MonthViewController {
     func pin(to view_: UIView) {
-        let HORIZONTAL_MARGIN: CGFloat = 50
+        let HORIZONTAL_MARGIN: CGFloat = UIScreen.main.bounds.width / 10
 //        let margins = self.view.layoutMarginsGuide
         
         view_.translatesAutoresizingMaskIntoConstraints = false

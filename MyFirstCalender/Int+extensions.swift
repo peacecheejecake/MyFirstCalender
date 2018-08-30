@@ -8,6 +8,8 @@
 
 import UIKit
 
+infix operator %/
+
 extension Int {
     func monthString(simple: Bool) -> String {
         if simple {
@@ -71,5 +73,10 @@ extension Int {
                 
             }
         }
+    }
+    
+    
+    static func %/(left: Int, right: Int) -> Int {
+        return (left - left % right) / right
     }
 }

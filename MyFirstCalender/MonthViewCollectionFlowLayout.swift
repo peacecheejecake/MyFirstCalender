@@ -1,5 +1,5 @@
 //
-//  MonthViewCollectionLayout.swift
+//  MonthViewCollectionFlowLayout.swift
 //  MyFirstCalender
 //
 //  Created by Jiyoung.Jiwon on 28/08/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MonthViewCollectionLayout: UICollectionViewFlowLayout {
+class MonthViewCollectionFlowLayout: UICollectionViewFlowLayout {
     override func prepare() {
         super.prepare()
     }
@@ -16,4 +16,6 @@ class MonthViewCollectionLayout: UICollectionViewFlowLayout {
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return super.layoutAttributesForElements(in: rect)
     }
+    
+    
 }

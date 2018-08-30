@@ -26,7 +26,7 @@
 		CA55D45C2130D0CF00F691E3 /* menuBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CA55D45B2130D0CF00F691E3 /* menuBar.png */; };
 		CA55D45F2130D22600F691E3 /* checkMark.png in Resources */ = {isa = PBXBuildFile; fileRef = CA55D45E2130D22600F691E3 /* checkMark.png */; };
 		CADE65012134E06F0064167E /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE65002134E06F0064167E /* UIColor+extensions.swift */; };
-		CADE6503213525E60064167E /* MonthViewCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE6502213525E60064167E /* MonthViewCollectionLayout.swift */; };
+		CADE6503213525E60064167E /* MonthViewCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE6502213525E60064167E /* MonthViewCollectionFlowLayout.swift */; };
 		CADE6505213540980064167E /* MonthViewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE6504213540980064167E /* MonthViewCollectionCell.swift */; };
 		CADE65072136144F0064167E /* Int+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE65062136144F0064167E /* Int+extensions.swift */; };
 		CADE650921361B870064167E /* MonthViewCollectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE650821361B870064167E /* MonthViewCollectionHeader.swift */; };
@@ -54,7 +54,7 @@
 		CA55D45B2130D0CF00F691E3 /* menuBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuBar.png; sourceTree = "<group>"; };
 		CA55D45E2130D22600F691E3 /* checkMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkMark.png; sourceTree = "<group>"; };
 		CADE65002134E06F0064167E /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
-		CADE6502213525E60064167E /* MonthViewCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewCollectionLayout.swift; sourceTree = "<group>"; };
+		CADE6502213525E60064167E /* MonthViewCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewCollectionFlowLayout.swift; sourceTree = "<group>"; };
 		CADE6504213540980064167E /* MonthViewCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewCollectionCell.swift; sourceTree = "<group>"; };
 		CADE65062136144F0064167E /* Int+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+extensions.swift"; sourceTree = "<group>"; };
 		CADE650821361B870064167E /* MonthViewCollectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewCollectionHeader.swift; sourceTree = "<group>"; };
@@ -100,9 +100,9 @@
 				CA1A878B21321BCD00C7BF0E /* SettingViewControllerKorean.swift */,
 				CA1A878F2132E4FD00C7BF0E /* MonthViewController.swift */,
 				CA1A87912132E50100C7BF0E /* MonthView.swift */,
-				CADE650821361B870064167E /* MonthViewCollectionHeader.swift */,
 				CADE6504213540980064167E /* MonthViewCollectionCell.swift */,
-				CADE6502213525E60064167E /* MonthViewCollectionLayout.swift */,
+				CADE650821361B870064167E /* MonthViewCollectionHeader.swift */,
+				CADE6502213525E60064167E /* MonthViewCollectionFlowLayout.swift */,
 				CA55D44E212F05A900F691E3 /* ThemeSettingViewController.swift */,
 				CA55D44C212F056600F691E3 /* LanguageSettingViewController.swift */,
 				CA55D44A212EDAB400F691E3 /* SettingManager.swift */,
@@ -215,7 +215,7 @@
 				CA1A87902132E4FD00C7BF0E /* MonthViewController.swift in Sources */,
 				CADE65072136144F0064167E /* Int+extensions.swift in Sources */,
 				CA55D449212EDAAA00F691E3 /* SettingViewController.swift in Sources */,
-				CADE6503213525E60064167E /* MonthViewCollectionLayout.swift in Sources */,
+				CADE6503213525E60064167E /* MonthViewCollectionFlowLayout.swift in Sources */,
 				CA55D453212FEC3500F691E3 /* MasterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,16 +361,20 @@
 		CA55D446212ED9F100F691E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XVT9A9T7RP;
 				INFOPLIST_FILE = MyFirstCalender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jj.MyFirstCalender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -379,16 +383,20 @@
 		CA55D447212ED9F100F691E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XVT9A9T7RP;
 				INFOPLIST_FILE = MyFirstCalender/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jj.MyFirstCalender;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

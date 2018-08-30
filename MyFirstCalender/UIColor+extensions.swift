@@ -36,4 +36,8 @@ extension UIColor {
             return .white
         }
     }
+    
+    static var highlight: UIColor {
+        return .red
+    }
 }

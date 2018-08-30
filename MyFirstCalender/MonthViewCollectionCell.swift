@@ -26,11 +26,11 @@ class MonthViewCollectionCell: UICollectionViewCell {
     let dateLabel: UILabel = {
         let label = UILabel()
         label.text = "00"
-        label.textColor = UIColor.main
         label.font = UIFont.monospacedDigitSystemFont(ofSize: 15, weight: .ultraLight)
+
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.backgroundColor = UIColor.clear
+        
             
         return label
     }()

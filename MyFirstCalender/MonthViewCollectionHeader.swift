@@ -9,6 +9,9 @@
 import UIKit
 
 class MonthViewCollectionHeader: UICollectionViewCell {
+    var delegate: MonthView?
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupHeader()
@@ -23,10 +26,11 @@ class MonthViewCollectionHeader: UICollectionViewCell {
         let label = UILabel()
         label.text = "Jan"
         label.textColor = UIColor.main
-        label.font = UIFont.systemFont(ofSize: 17)
+        label.font = UIFont.monospacedDigitSystemFont(ofSize: 19, weight: .light)
         label.textAlignment = .left
-        label.sizeToFit()
         label.translatesAutoresizingMaskIntoConstraints = false
+        
+        label.backgroundColor = UIColor.clear
         
         return label
     }()
@@ -34,11 +38,18 @@ class MonthViewCollectionHeader: UICollectionViewCell {
     
     func setupHeader() {
         addSubview(monthLabel)
-        
-        monthLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        monthLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        monthLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        monthLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+//
+//        monthLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
+//        monthLabel.bottomAnchor .constraint(equalTo: bottomAnchor).isActive = true
+//        monthLabel.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+//        monthLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+//
+//        if let delegate = delegate {
+////            monthLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: CGFloat(delegate.firstDayOfMonth) * (delegate.dateWidth + delegate.dateSpacing)).isActive = true
+//            monthLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -CGFloat(6 - delegate.firstDayOfMonth) * (delegate.dateWidth + delegate.dateSpacing)).isActive = true
+
+//        }
+
     }
     
     
@@ -46,14 +57,21 @@ class MonthViewCollectionHeader: UICollectionViewCell {
     override func draw(_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()
         
-        context?.move(to: CGPoint(x: 0, y: self.bounds.maxY))
-        context?.addLine(to: CGPoint(x: self.bounds.maxX, y: self.bounds.maxY))
-        context?.setLineCap(.square)
-        context?.setLineJoin(.miter)
-        context?.setLineWidth(1.0)
-//        UIColor.main.setStroke()
-        context?.setStrokeColor(UIColor.main.cgColor)
-        setNeedsLayout()
-        context?.strokePath()
+        
+        if let delegate = delegate {
+        
+            let spacing = delegate.dateSpacing / 2
+            
+            context?.move(to: CGPoint(x: CGFloat(delegate.firstDayOfMonth) * (delegate.dateWidth + delegate.dateSpacing) - delegate.dateSpacing / 2, y: monthLabel.bounds.maxY + spacing))
+            context?.addLine(to: CGPoint(x: self.bounds.maxX, y: monthLabel.bounds.maxY + spacing))
+            context?.setLineCap(.square)
+            context?.setLineJoin(.miter)
+            context?.setLineWidth(0.5)
+            //        UIColor.main.setStroke()
+            context?.setStrokeColor(UIColor.main.cgColor)
+            setNeedsLayout()
+            context?.strokePath()
+        }
+        
     }
 }
