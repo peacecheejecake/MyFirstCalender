@@ -23,7 +23,7 @@ class MonthViewController: UIViewController {
         
         view.backgroundColor = UIColor.white
         
-        navigationItem.title = "\(monthView.currentYear)"
+//        navigationItem.title = "\(monthView.currentMonth.monthString(simple: false)) \(monthView.currentYear)"
         
         
         navigationItem.leftBarButtonItem?.tintColor = UIColor.main
@@ -41,7 +41,8 @@ class MonthViewController: UIViewController {
 
 extension MonthViewController {
     func pin(to view_: UIView) {
-        let HORIZONTAL_MARGIN: CGFloat = UIScreen.main.bounds.width / 10
+        let HORIZONTAL_MARGIN: CGFloat = UIScreen.main.bounds.width / 12
+        let VERTICAL_MARGIN: CGFloat = UIScreen.main.bounds.height / 12
 //        let margins = self.view.layoutMarginsGuide
         
         view_.translatesAutoresizingMaskIntoConstraints = false
@@ -49,7 +50,7 @@ extension MonthViewController {
         view_.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: HORIZONTAL_MARGIN).isActive = true
         view_.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -HORIZONTAL_MARGIN).isActive = true
 //        view_.topAnchor.constraint(equalTo: (navigationController?.navigationBar.bottomAnchor)!, constant: 30).isActive = true
-        view_.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 130).isActive = true
+        view_.topAnchor.constraint(equalTo: self.view.topAnchor, constant: VERTICAL_MARGIN + (navigationController?.navigationBar.frame.height)!).isActive = true
         view_.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -30).isActive = true
     }
 }

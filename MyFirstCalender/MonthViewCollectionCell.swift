@@ -27,7 +27,6 @@ class MonthViewCollectionCell: UICollectionViewCell {
         let label = UILabel()
         label.text = "00"
         label.font = UIFont.monospacedDigitSystemFont(ofSize: 15, weight: .ultraLight)
-
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -40,7 +39,7 @@ class MonthViewCollectionCell: UICollectionViewCell {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.leadingAnchor.constraint(equalTo: dateLabel.leadingAnchor).isActive = true
         self.trailingAnchor.constraint(equalTo: dateLabel.trailingAnchor).isActive = true
-        self.topAnchor.constraint(equalTo: dateLabel.topAnchor).isActive = true
+        self.centerYAnchor.constraint(equalTo: dateLabel.centerYAnchor).isActive = true
         self.bottomAnchor.constraint(equalTo: dateLabel.bottomAnchor).isActive = true
     }
 }

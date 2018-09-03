@@ -8,7 +8,7 @@
 
 import UIKit
 
-infix operator %/
+infix operator %/ : MultiplicationPrecedence
 
 extension Int {
     func monthString(simple: Bool) -> String {
@@ -36,7 +36,7 @@ extension Int {
                 return "Oct"
             case 11:
                 return "Nov"
-            case 0:
+            case 0, 12:
                 return "Dec"
             default:
                 return ""
@@ -66,7 +66,7 @@ extension Int {
                 return "October"
             case 11:
                 return "November"
-            case 0:
+            case 0, 12:
                 return "December"
             default:
                 return ""
