@@ -10,7 +10,7 @@
 		CA1A878C21321BCD00C7BF0E /* SettingViewControllerKorean.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A878B21321BCD00C7BF0E /* SettingViewControllerKorean.swift */; };
 		CA1A878E21321C3500C7BF0E /* SettingViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A878D21321C3500C7BF0E /* SettingViewControllerProtocol.swift */; };
 		CA1A87902132E4FD00C7BF0E /* MonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A878F2132E4FD00C7BF0E /* MonthViewController.swift */; };
-		CA1A87922132E50100C7BF0E /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A87912132E50100C7BF0E /* MonthView.swift */; };
+		CA1A87922132E50100C7BF0E /* WeekNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A87912132E50100C7BF0E /* WeekNameView.swift */; };
 		CA1A87942132F90F00C7BF0E /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1A87932132F90F00C7BF0E /* ThemeManager.swift */; };
 		CA55D437212ED9F000F691E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55D436212ED9F000F691E3 /* AppDelegate.swift */; };
 		CA55D43C212ED9F000F691E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA55D43A212ED9F000F691E3 /* Main.storyboard */; };
@@ -25,6 +25,9 @@
 		CA55D455212FEC4C00F691E3 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA55D454212FEC4C00F691E3 /* SideBarViewController.swift */; };
 		CA55D45C2130D0CF00F691E3 /* menuBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CA55D45B2130D0CF00F691E3 /* menuBar.png */; };
 		CA55D45F2130D22600F691E3 /* checkMark.png in Resources */ = {isa = PBXBuildFile; fileRef = CA55D45E2130D22600F691E3 /* checkMark.png */; };
+		CA9FA890213CD3B700A15D80 /* MonthViewScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FA88F213CD3B700A15D80 /* MonthViewScheduleCell.swift */; };
+		CA9FA892213D27E800A15D80 /* MonthCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FA891213D27E800A15D80 /* MonthCollectionViewController.swift */; };
+		CA9FA894213D282400A15D80 /* Dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9FA893213D282400A15D80 /* Dimensions.swift */; };
 		CAD98B412137FB27001B1D14 /* MonthScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD98B402137FB27001B1D14 /* MonthScheduleViewController.swift */; };
 		CADE65012134E06F0064167E /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE65002134E06F0064167E /* UIColor+extensions.swift */; };
 		CADE6503213525E60064167E /* MonthViewCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADE6502213525E60064167E /* MonthViewCollectionFlowLayout.swift */; };
@@ -37,7 +40,7 @@
 		CA1A878B21321BCD00C7BF0E /* SettingViewControllerKorean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewControllerKorean.swift; sourceTree = "<group>"; };
 		CA1A878D21321C3500C7BF0E /* SettingViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CA1A878F2132E4FD00C7BF0E /* MonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewController.swift; sourceTree = "<group>"; };
-		CA1A87912132E50100C7BF0E /* MonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		CA1A87912132E50100C7BF0E /* WeekNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekNameView.swift; sourceTree = "<group>"; };
 		CA1A87932132F90F00C7BF0E /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		CA55D433212ED9F000F691E3 /* MyFirstCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA55D436212ED9F000F691E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +57,9 @@
 		CA55D454212FEC4C00F691E3 /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
 		CA55D45B2130D0CF00F691E3 /* menuBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuBar.png; sourceTree = "<group>"; };
 		CA55D45E2130D22600F691E3 /* checkMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkMark.png; sourceTree = "<group>"; };
+		CA9FA88F213CD3B700A15D80 /* MonthViewScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewScheduleCell.swift; sourceTree = "<group>"; };
+		CA9FA891213D27E800A15D80 /* MonthCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewController.swift; sourceTree = "<group>"; };
+		CA9FA893213D282400A15D80 /* Dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dimensions.swift; sourceTree = "<group>"; };
 		CAD98B402137FB27001B1D14 /* MonthScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthScheduleViewController.swift; sourceTree = "<group>"; };
 		CADE65002134E06F0064167E /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
 		CADE6502213525E60064167E /* MonthViewCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthViewCollectionFlowLayout.swift; sourceTree = "<group>"; };
@@ -101,8 +107,11 @@
 				CA55D448212EDAAA00F691E3 /* SettingViewController.swift */,
 				CA1A878B21321BCD00C7BF0E /* SettingViewControllerKorean.swift */,
 				CA1A878F2132E4FD00C7BF0E /* MonthViewController.swift */,
-				CA1A87912132E50100C7BF0E /* MonthView.swift */,
+				CA9FA88F213CD3B700A15D80 /* MonthViewScheduleCell.swift */,
 				CAD98B402137FB27001B1D14 /* MonthScheduleViewController.swift */,
+				CA9FA891213D27E800A15D80 /* MonthCollectionViewController.swift */,
+				CA1A87912132E50100C7BF0E /* WeekNameView.swift */,
+				CA9FA893213D282400A15D80 /* Dimensions.swift */,
 				CADE6504213540980064167E /* MonthViewCollectionCell.swift */,
 				CADE650821361B870064167E /* MonthViewCollectionHeader.swift */,
 				CADE6502213525E60064167E /* MonthViewCollectionFlowLayout.swift */,
@@ -206,13 +215,15 @@
 				CA1A878C21321BCD00C7BF0E /* SettingViewControllerKorean.swift in Sources */,
 				CA55D44F212F05A900F691E3 /* ThemeSettingViewController.swift in Sources */,
 				CADE65012134E06F0064167E /* UIColor+extensions.swift in Sources */,
+				CA9FA890213CD3B700A15D80 /* MonthViewScheduleCell.swift in Sources */,
 				CA55D44B212EDAB400F691E3 /* SettingManager.swift in Sources */,
 				CADE6505213540980064167E /* MonthViewCollectionCell.swift in Sources */,
 				CA55D437212ED9F000F691E3 /* AppDelegate.swift in Sources */,
 				CA1A878E21321C3500C7BF0E /* SettingViewControllerProtocol.swift in Sources */,
 				CA1A87942132F90F00C7BF0E /* ThemeManager.swift in Sources */,
 				CA55D451212FEA4F00F691E3 /* FirstViewController.swift in Sources */,
-				CA1A87922132E50100C7BF0E /* MonthView.swift in Sources */,
+				CA1A87922132E50100C7BF0E /* WeekNameView.swift in Sources */,
+				CA9FA892213D27E800A15D80 /* MonthCollectionViewController.swift in Sources */,
 				CA55D44D212F056600F691E3 /* LanguageSettingViewController.swift in Sources */,
 				CADE650921361B870064167E /* MonthViewCollectionHeader.swift in Sources */,
 				CA1A87902132E4FD00C7BF0E /* MonthViewController.swift in Sources */,
@@ -220,6 +231,7 @@
 				CA55D449212EDAAA00F691E3 /* SettingViewController.swift in Sources */,
 				CAD98B412137FB27001B1D14 /* MonthScheduleViewController.swift in Sources */,
 				CADE6503213525E60064167E /* MonthViewCollectionFlowLayout.swift in Sources */,
+				CA9FA894213D282400A15D80 /* Dimensions.swift in Sources */,
 				CA55D453212FEC3500F691E3 /* MasterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

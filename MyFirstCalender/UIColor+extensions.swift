@@ -37,6 +37,15 @@ extension UIColor {
         }
     }
     
+    static var subBG: UIColor {
+        switch SettingManager.theme {
+        case .Dark:
+            return .darkGray
+        case .Light:
+            return .darkGray
+        }
+    }
+    
     static var highlight: UIColor {
         return .red
     }

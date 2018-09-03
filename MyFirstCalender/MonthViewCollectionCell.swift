@@ -29,6 +29,7 @@ class MonthViewCollectionCell: UICollectionViewCell {
         label.font = UIFont.monospacedDigitSystemFont(ofSize: 15, weight: .ultraLight)
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
+//        label.backgroundColor = UIColor.brown
         
             
         return label
@@ -41,5 +42,6 @@ class MonthViewCollectionCell: UICollectionViewCell {
         self.trailingAnchor.constraint(equalTo: dateLabel.trailingAnchor).isActive = true
         self.centerYAnchor.constraint(equalTo: dateLabel.centerYAnchor).isActive = true
         self.bottomAnchor.constraint(equalTo: dateLabel.bottomAnchor).isActive = true
+//        self.topAnchor.constraint(equalTo: dateLabel.topAnchor).isActive = true
     }
 }

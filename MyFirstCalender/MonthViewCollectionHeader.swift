@@ -9,7 +9,7 @@
 import UIKit
 
 class MonthViewCollectionHeader: UICollectionViewCell {
-    var delegate: MonthView?
+    var delegate: MonthCollectionViewController?
     
 //    let BOTTOM_SPACING: CGFloat = 30
     
